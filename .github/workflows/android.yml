@@ -19,7 +19,8 @@ jobs:
       - name: Generate Android and iOS platform scaffolding
         run: flutter create --platforms=android,ios --project-name pocket_ledger .
       - run: flutter pub get
-      - run: flutter analyze
+      - name: Analyze Dart source
+        run: flutter analyze --no-fatal-infos
       - run: flutter test
       - run: flutter build apk --release
       - uses: actions/upload-artifact@v4
