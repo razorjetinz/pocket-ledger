@@ -13,8 +13,9 @@ A clean, offline-first personal money manager built with Flutter. Track income a
 ## Run locally
 1. Install Flutter stable and Android Studio (or Xcode for iOS).
 2. Clone this repository.
-3. Run `flutter pub get`.
-4. Run `flutter run`.
+3. Generate the native platform folders: `flutter create --platforms=android,ios --project-name pocket_ledger .`
+4. Run `flutter pub get`.
+5. Run `flutter run`.
 
 ## Build Android
 ```bash
